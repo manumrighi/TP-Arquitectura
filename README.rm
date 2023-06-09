@@ -1,4 +1,4 @@
-This repository contains an Angular app and a .NET app. Following are the steps required to set up and run the applications, as well as instructions for using Docker and the docker-compose.yml file.
+<h3>This repository contains an Angular app and a .NET app. Following are the steps required to set up and run the applications, as well as instructions for using Docker and the docker-compose.yml file.</h3>
 
 Previous requirements:
 Make sure you have the following software versions installed on your system:
