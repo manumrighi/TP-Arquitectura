@@ -1,0 +1,38 @@
+<div class="titulo">
+  <h3>INICIAR SESION</h3>
+</div>
+
+<div class="container">
+  <div class="contact_form">
+    <form>
+      <p>
+        <label for="userName">UserName</label>
+
+        <input
+          type="userName"
+          name="userName"
+          id="userName"
+          autocomplete="userName"
+          placeholder="ingresa tu userName"
+        />
+      </p>
+
+      <p>
+        <label for="password">Password</label>
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="current-password"
+          placeholder="Ingresa tu contraseña"
+        />
+      </p>
+
+      <button type="submit" [routerLink]="['/contacts']">Ingresar</button>
+      <button type="button" [routerLink]="['/register']">
+        ¿No estás registrado? Regístrate
+      </button>
+    </form>
+  </div>
+</div>

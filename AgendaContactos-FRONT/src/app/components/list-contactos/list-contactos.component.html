@@ -1,0 +1,76 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+  />
+</head>
+
+<div class="titulo">
+  <button [routerLink]="['/login']" class="cerrarSesion">Cerrar Sesión</button>
+  <h3 class="lista">Listado de Contactos</h3>
+  <button routerLink="/agregar" class="newcontact">Nuevo Contacto</button>
+</div>
+<div class="container">
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Nombre</div>
+      <div class="col col-2">Numero</div>
+      <div class="col col-3">Email</div>
+      <div class="col col-4"></div>
+      <div class="col col-5"></div>
+      <div class="col col-6">Favorito</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Nombre">
+        Pedro Martin<a [routerLink]="['/ver']"></a>
+      </div>
+      <div class="col col-2" data-label="Numero">416313</div>
+      <div class="col col-3" data-label="Email">pedro@gmail.com</div>
+      <div class="col col-4" data-label="">
+        <button [routerLink]="['/editar']" class="accionEdit">Editar</button>
+      </div>
+      <div class="col col-5" data-label="">
+        <button class="accionDelet">Eliminar</button>
+      </div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Nombre">
+        Juan<a [routerLink]="['/ver']"></a>
+      </div>
+      <div class="col col-2" data-label="Numero">339941</div>
+      <div class="col col-3" data-label="Email">juan@gmail.com</div>
+      <div class="col col-4" data-label="">
+        <button [routerLink]="['/editar']" class="accionEdit">Editar</button>
+      </div>
+      <div class="col col-5" data-label="">
+        <button class="accionDelet">Eliminar</button>
+      </div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Nombre">
+        Cacho<a [routerLink]="['/ver']"></a>
+      </div>
+      <div class="col col-2" data-label="Numero">335612</div>
+      <div class="col col-3" data-label="Email">cacho1@gmail.com</div>
+      <div class="col col-4" data-label="">
+        <button [routerLink]="['/editar']" class="accionEdit">Editar</button>
+      </div>
+      <div class="col col-5" data-label="">
+        <button class="accionDelet">Eliminar</button>
+      </div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Nombre">
+        Nacho<a [routerLink]="['/ver']"></a>
+      </div>
+      <div class="col col-2" data-label="Numero">993123</div>
+      <div class="col col-3" data-label="Email">nacho@gmail.com</div>
+      <div class="col col-4" data-label="">
+        <button [routerLink]="['/editar']" class="accionEdit">Editar</button>
+      </div>
+      <div class="col col-5" data-label="">
+        <button class="accionDelet">Eliminar</button>
+      </div>
+    </li>
+  </ul>
+</div>

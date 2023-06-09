@@ -1,0 +1,18 @@
+version: "3.4"
+
+services:
+  msnet6:
+    image: backfinal
+    build:
+      context: ./AgendaContactos-BACK/ApiAgendaTupBrande
+      dockerfile: ./Dockerfile
+    ports:
+      - 5010:80
+
+  angular:
+    image: demoimage
+    build:
+      context: ./AgendaContactos-FRONT
+      dockerfile: ./Dockerfile
+    ports:
+      - 4200:80

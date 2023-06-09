@@ -1,0 +1,33 @@
+<div class="titulo">
+    <h3>{{ accion }} Contacto</h3>
+</div>
+
+<div class="container">
+    <div class="contact_form">
+		<div class="formulario">
+            <form [formGroup]="agregarContact" (ngSubmit)="agregarEditarContacto()">
+        <p>
+					<label for="nombre" class="colocar_nombre">Nombre</label>
+					<input formControlName="name" type="text" id="nombre" placeholder="Escribe tu nombre" autocomplete="off">
+				</p>
+
+				<p>
+					<label for="number" class="colocar_telefono">Numero</label>
+					<input formControlName="celularNumber" type="tel" min="10" max="15" id="number" placeholder="Escribe tu teléfono" autocomplete="off">
+				</p>
+
+        <p>
+					<label for="email" class="colocar_email">Correo Electronico</label>
+					<input formControlName="email" type="email" id="email" placeholder="Escribe tu Email" autocomplete="off">
+        </p>
+
+				<p>
+					<label for="favorite" class="colocar_fav">Favorito</label>
+					<input formControlName="favorite" type="checkbox" id="favorite">
+        </p>
+				<button type="submit" id="enviar"><p>Aceptar</p></button>
+        <button type="button" routerLink="/contact/">Volver</button>
+			</form>
+		</div>
+	</div>
+</div>
