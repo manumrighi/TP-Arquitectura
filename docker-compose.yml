@@ -1,18 +1,43 @@
 version: "3.4"
+# Versión de la sintaxis del archivo docker-compose.
 
 services:
+  # Definición de los servicios a ejecutar.
+
   msnet6:
+    # Nombre del servicio para la aplicación .NET.
+
     image: backfinal
+    # Imagen utilizada para el servicio.
+
     build:
+      # Configuración para construir la imagen del servicio.
+
       context: ./AgendaContactos-BACK/ApiAgendaTupBrande
+      # Ruta del contexto donde se encuentra el código fuente de la aplicación.
+
       dockerfile: ./Dockerfile
+      # Ruta del Dockerfile utilizado para construir la imagen.
+
     ports:
       - 5010:80
+      # Mapeo de puertos para acceder al servicio (puerto del host: puerto del contenedor).
 
   angular:
+    # Nombre del servicio para la aplicación Angular.
+
     image: demoimage
+    # Imagen utilizada para el servicio.
+
     build:
+      # Configuración para construir la imagen del servicio.
+
       context: ./AgendaContactos-FRONT
+      # Ruta del contexto donde se encuentra el código fuente de la aplicación.
+
       dockerfile: ./Dockerfile
+      # Ruta del Dockerfile utilizado para construir la imagen.
+
     ports:
       - 4200:80
+      # Mapeo de puertos para acceder al servicio (puerto del host: puerto del contenedor).
