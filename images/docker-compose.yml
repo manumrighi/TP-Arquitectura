@@ -1,0 +1,10 @@
+services:
+  msnet6:
+    image: gerorodriguez/backfinal:v1
+    ports:
+      - 5010:80
+
+  angular:
+    image: gerorodriguez/demoimage:v1
+    ports:
+      - 4200:80
