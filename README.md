@@ -1,4 +1,4 @@
-<h1>This repository contains an Angular app and a .NET app. Following are the steps required to set up and run the applications, as well as instructions for using Docker and the docker-compose.yml file.</h1>
+<h3>This repository contains an Angular app and a .NET app. Following are the steps required to set up and run the applications, as well as instructions for using Docker and the docker-compose.yml file.</h3>
 
 <h3> Previous requirements:</h3>
 
@@ -30,16 +30,28 @@
          Restores the project packages
          The app will be available at http://localhost:5010
 
-<h3>Using the docker-compose.yml file.</h3>
+<h3>Using the docker-compose.yml file local.</h3>
 
      1- Make sure you have Docker installed and running on your system.
 
      2- In the "TP-Arquitectura" folder, execute the following command to build the Docker images:
          docker-compose up -d
 
-     This will create and run the Docker containers according to the specifications in the docker-compose.yml file
+        This will create and run the Docker containers according to the specifications in the docker-compose.yml file
 
      3-Once the containers are up and running, the Angular app will be available at http://localhost:4200 and the .NET app will be available at http://localhost:5010/swagger/index.html
+
+<h3>Using the docker-compose.yml file remote.</h3>
+
+    1- Make sure you have Docker installed and running on your system.
+
+    2-In the "images" folder, execute the following command to build the Docker images:
+         docker-compose up -d
+    
+        This will create and run the Docker containers according to the specifications in the docker-compose.yml file
+        You can use this option if you do not want to download the repository locally, what docker-compose will do is automatically download the images directly from https://hub.docker.com
+    
+    3-Once the containers are up and running, the Angular app will be available at http://localhost:4200 and the .NET app will be available at http://localhost:5010/swagger/index.html
 
 <h3>Remember that you must have sufficient permissions to run the commands and make sure you have the correct versions of Angular, .NET and Docker installed on your system.</h3>
 
